@@ -125,9 +125,30 @@ h1 {
 .profile-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
-  font-size: 0.9rem;
-  font-weight: 600;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile-links a {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.profile-links a:hover,
+.profile-links a:focus-visible {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.profile-links svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
 }
 
 nav {
@@ -470,8 +491,37 @@ footer p {
           <h1>Shude Chen</h1>
           <p class="name-local">陳 淑徳</p>
           <div class="profile-links" aria-label="Profile links">
-            <a href="mailto:chenshude31@gmail.com">Email</a>
-            <a href="https://github.com/shude-chen" target="_blank" rel="noreferrer">GitHub</a>
+            <a
+              href="https://github.com/shude-chen"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="GitHub profile"
+              title="GitHub"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2C6.48 2 2 6.58 2 12.23c0 4.52 2.87 8.35 6.84 9.71.5.1.68-.22.68-.49 0-.24-.01-1.04-.01-1.89-2.78.62-3.37-1.21-3.37-1.21-.45-1.18-1.11-1.49-1.11-1.49-.91-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.28 2.75 1.05A9.3 9.3 0 0 1 12 6.23a9.2 9.2 0 0 1 2.5.35c1.91-1.33 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.79-4.58 5.04.36.32.68.94.68 1.89 0 1.37-.01 2.47-.01 2.81 0 .27.18.59.69.49A10.24 10.24 0 0 0 22 12.23C22 6.58 17.52 2 12 2Z" />
+              </svg>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=YrucuZkAAAAJ&amp;hl=en"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Google Scholar profile"
+              title="Google Scholar"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 3 1.5 8.25 12 13.5l8-4v5.25h2V8.25L12 3Zm-6.5 8.75V16c0 2.2 2.91 4 6.5 4s6.5-1.8 6.5-4v-4.25L12 15l-6.5-3.25Z" />
+              </svg>
+            </a>
+            <a
+              href="mailto:chenshude31@gmail.com"
+              aria-label="Email Shude Chen"
+              title="Email"
+            >
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M3 4h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2Zm9 8.3L20.2 6H3.8L12 12.3ZM3 18h18V8.1l-8.39 6.45a1 1 0 0 1-1.22 0L3 8.1V18Z" />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
