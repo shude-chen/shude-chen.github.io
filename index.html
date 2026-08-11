@@ -358,6 +358,32 @@ h3 {
   font-size: 0.8rem;
 }
 
+.skills-columns {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 54px;
+}
+
+.skills-list {
+  margin: 0;
+}
+
+.skill-item {
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.skill-item dt {
+  font-size: 0.88rem;
+  font-weight: 700;
+}
+
+.skill-item dd {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+
 .contact > p {
   max-width: 620px;
 }
@@ -414,11 +440,13 @@ footer p {
   }
 
   .research-grid,
-  .timeline-columns {
+  .timeline-columns,
+  .skills-columns {
     grid-template-columns: 1fr;
   }
 
-  .timeline-columns {
+  .timeline-columns,
+  .skills-columns {
     gap: 38px;
   }
 
@@ -542,6 +570,7 @@ footer p {
         <a href="#research">Research</a>
         <a href="#publications">Publications</a>
         <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
       </nav>
     </header>
@@ -784,9 +813,66 @@ footer p {
         </div>
       </section>
 
-      <section class="contact section-block" id="contact" aria-labelledby="contact-heading">
+      <section class="section-block" id="skills" aria-labelledby="skills-heading">
         <div class="section-heading">
           <p class="section-number">04</p>
+          <h2 id="skills-heading">Technical Skills &amp; Languages</h2>
+        </div>
+
+        <div class="skills-columns">
+          <div>
+            <h3 class="column-title">Technical Skills</h3>
+            <dl class="skills-list">
+              <div class="skill-item">
+                <dt>Programming</dt>
+                <dd>Python, JavaScript, C/C++, R, HTML/CSS</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Machine Learning &amp; Data Analysis</dt>
+                <dd>Gaussian Process Regression, Time-Series Forecasting, Anomaly Detection, Multivariate Data Analysis, Network Traffic Analysis, Model Evaluation</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Libraries &amp; Frameworks</dt>
+                <dd>PyTorch, GPyTorch, scikit-learn, NumPy, pandas, Matplotlib</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Platforms &amp; Tools</dt>
+                <dd>ServiceNow, Git/GitHub, Jupyter Notebook, Google Colab, LaTeX</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Parallel Computing</dt>
+                <dd>CUDA, SYCL</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Enterprise Systems</dt>
+                <dd>SAP</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div>
+            <h3 class="column-title">Languages</h3>
+            <dl class="skills-list">
+              <div class="skill-item">
+                <dt>Chinese</dt>
+                <dd>Native</dd>
+              </div>
+              <div class="skill-item">
+                <dt>Japanese</dt>
+                <dd>Professional Working Proficiency (JLPT N1)</dd>
+              </div>
+              <div class="skill-item">
+                <dt>English</dt>
+                <dd>Working Proficiency (TOEIC L&amp;R 720, 2025)</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section-block" id="contact" aria-labelledby="contact-heading">
+        <div class="section-heading">
+          <p class="section-number">05</p>
           <h2 id="contact-heading">Contact</h2>
         </div>
         <p>
