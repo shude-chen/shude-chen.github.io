@@ -589,21 +589,26 @@ footer p {
     <main id="main">
       <section class="intro section-block" aria-labelledby="about-heading">
         <h2 id="about-heading" class="visually-hidden">About</h2>
-        <p class="lead">
-          I am a Systems Engineer at <strong>NSSOL Okinawa</strong> and a
-          Visiting Researcher at the <strong>University of the Ryukyus</strong>.
-          My research lies at the intersection of machine learning and network
-          systems, with a focus on network traffic forecasting and anomaly detection.
-        </p>
-        <p>
-          I I received my Master of Engineering degree in Intelligent Information
-          from the University of the Ryukyus in September 2025. Using real-world
-          backbone traffic data from the WIDE/MAWI Project, I developed
-          multi-output Gaussian process models that exploit correlations among
-          multiple traffic signals for bandwidth prediction and anomaly detection.
-          My current research explores scalable and adaptive learning methods
-          for large and dynamic network environments.
-        </p>
+        <p class="lead">My research focuses on machine learning for networked systems,
+          particularly network traffic forecasting, anomaly detection, and efficient probabilistic modelling.
+          I am a Visiting Researcher at the <strong>University of the Ryukyus</strong>
+          and a Systems Engineer at <strong>NSSOL Okinawa</strong>, Japan.</p>
+        <p>I received my Bachelor of Engineering and Master of Engineering degrees from the
+          University of the Ryukyus in March 2024 and September 2025, respectively.
+          I completed the two-year master's programme in <strong>18 months</strong>
+          with a <strong>GPA of 4.0/4.0</strong>.</p>
+        <p>My master's research used multi-output Gaussian processes to model dependencies
+          among network traffic signals from the WIDE/MAWI Project. I investigated traffic
+          forecasting, prediction-based anomaly detection, and sparse approximations for
+          computational efficiency. My research has resulted in two journal papers and three
+          international conference papers, and I received the
+          <strong>Best Presentation Award at ICICSP 2024</strong>.</p>
+        <p>I am seeking <strong>PhD opportunities starting in 2027</strong> in machine learning
+          for reliable and efficient networked systems. My research interests also include
+          federated learning and unlearning.</p>
+        <p><a href="CV_Chen.pdf" target="_blank" rel="noopener noreferrer"><strong>Download CV (PDF)</strong></a>
+          &nbsp;&middot;&nbsp; <a href="#publications">Publications</a>
+          &nbsp;&middot;&nbsp; <a href="mailto:chenshude31@gmail.com">Contact me</a></p>
       </section>
 
       <section class="section-block" id="research" aria-labelledby="research-heading">
@@ -628,18 +633,29 @@ footer p {
             </p>
           </article>
           <article>
-            <h3>Adaptive Network Monitoring</h3>
+            <h3>Scalable Probabilistic Modelling</h3>
             <p>
-              Sparse and adaptive models for scalable traffic analysis under changing network conditions and concept drift.
+              Sparse Gaussian process approximations for reducing computational cost in multivariate network traffic forecasting and anomaly detection.
             </p>
           </article>
         </div>
 
-        <div class="highlight-strip" aria-label="Selected research results">
-          <div><strong>35.3%</strong><span>best RMSE reduction</span></div>
-          <div><strong>0.930</strong><span>best anomaly-detection F1</span></div>
-          <div><strong>20 GB+</strong><span>network trace scale</span></div>
-        </div>
+        <article style="margin-top: 28px;">
+          <h3>Selected Project: Gaussian Processes for Network Traffic Analysis</h3>
+          <p>Network traffic signals exhibit dependencies across channels that can be overlooked
+            when each signal is modelled independently. Using WIDE/MAWI traffic data, I developed
+            multi-output Gaussian process models that incorporate inter-channel correlations
+            and multi-scale features for bandwidth prediction.</p>
+          <p>In the evaluated forecasting experiments, the best configuration reduced RMSE
+            by up to <strong>35.3%</strong> compared with single-output Gaussian process regression.
+            Related work explored residual-based anomaly detection and sparse approximations
+            to reduce computational cost.</p>
+          <p><a href="https://doi.org/10.14569/IJACSA.2025.0160207" target="_blank" rel="noopener noreferrer">Forecasting paper</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://doi.org/10.22937/IJCSNS.2025.25.7.2" target="_blank" rel="noopener noreferrer">Anomaly detection paper</a>
+            &nbsp;&middot;&nbsp;
+            <a href="https://doi.org/10.1109/ICICSP66564.2025.11338322" target="_blank" rel="noopener noreferrer">Sparse modelling paper</a></p>
+        </article>
       </section>
 
       <section class="section-block" id="publications" aria-labelledby="publications-heading">
@@ -728,7 +744,7 @@ footer p {
             <span class="year">2024</span>
             <div>
               <p>
-                <strong>陳 淑徳</strong>, 城間政司, 名嘉村盛和,仲地孝之.
+                <strong>陳 淑徳</strong>, 城間政司, 名嘉村盛和, 仲地孝之.
                 <a
                   href="https://ken.ieice.org/ken/paper/20241205Qc63/"
                   target="_blank"
@@ -736,7 +752,9 @@ footer p {
                 >多出力ガウス過程を用いたネットワーク帯域予測の精度向上.</a>
                 <em>IEICE Technical Report, SIS2024-39</em>, 124(288), 49-54.
               </p>
-              <span class="tag">Conference</span>
+              <p>English translation: Improving Network Bandwidth Prediction Accuracy Using Multi-Output Gaussian Processes.</p>
+              <span class="tag">Technical Report</span>
+              <span class="tag">In Japanese</span>
             </div>
           </li>
         </ol>
@@ -752,44 +770,44 @@ footer p {
           <div>
             <h3 class="column-title">Experience</h3>
             <article class="timeline-item">
-              <p class="timeline-date">2026 - Present</p>
+              <p class="timeline-date">Apr. 2026 &ndash; Present</p>
               <div>
                 <h3>Systems Engineer</h3>
                 <p>NSSOL Okinawa</p>
-                <p class="muted">Enterprise platforms and applied AI automation.</p>
+                <p class="muted">ServiceNow development and administration, including AI-assisted workflow automation.</p>
               </div>
             </article>
             <article class="timeline-item">
-              <p class="timeline-date">2025 - Present</p>
+              <p class="timeline-date">Oct. 2025 &ndash; Present</p>
               <div>
                 <h3>Visiting Researcher</h3>
                 <p>Faculty of Engineering, University of the Ryukyus</p>
               </div>
             </article>
             <article class="timeline-item">
-              <p class="timeline-date">Oct 2024 - Sep 2025</p>
+              <p class="timeline-date">Oct. 2024 &ndash; Sep. 2025</p>
               <div>
                 <h3>Teaching Assistant</h3>
                 <p>University of the Ryukyus</p>
               </div>
             </article>
             <article class="timeline-item">
-              <p class="timeline-date">May 2024 - Sep 2025</p>
+              <p class="timeline-date">May 2024 &ndash; Sep. 2025</p>
               <div>
                 <h3>Technical Consultant</h3>
                 <p>Information Technology Center, University of the Ryukyus</p>
               </div>
             </article>
             <article class="timeline-item">
-              <p class="timeline-date">Research Internship</p>
+              <p class="timeline-date">Aug. 2024 &ndash; Oct. 2024</p>
               <div>
-                <h3>Rehabilitation Robotics</h3>
-                <p>OIST(Okinawa Institute of Science and Technology)</p>
+                <h3>Research Intern</h3>
+                <p>Okinawa Institute of Science and Technology (OIST)</p>
                 <p class="muted">Data processing for lower-limb exoskeleton research.</p>
               </div>
             </article>
             <article class="timeline-item">
-              <p class="timeline-date">Jul 2022 - Sep 2025</p>
+              <p class="timeline-date">Jul. 2022 &ndash; Sep. 2025</p>
               <div>
                 <h3>Student Tutor</h3>
                 <p>University of the Ryukyus</p>
@@ -800,18 +818,20 @@ footer p {
           <div>
             <h3 class="column-title">Education</h3>
             <article class="timeline-item">
-              <p class="timeline-date">2024 - 2025</p>
+              <p class="timeline-date">Apr. 2024 &ndash; Sep. 2025</p>
               <div>
                 <h3>Master of Engineering</h3>
                 <p>Intelligent Information Program, University of the Ryukyus</p>
-                <p class="muted">Completed the program early.</p>
+                <p><strong>GPA: 4.0/4.0</strong></p>
+                <p class="muted">Completed the two-year programme in 18 months.</p>
               </div>
             </article>
             <article class="timeline-item">
-              <p class="timeline-date">2020 - 2024</p>
+              <p class="timeline-date">Apr. 2020 &ndash; Mar. 2024</p>
               <div>
                 <h3>Bachelor of Engineering</h3>
                 <p>Intelligent Information Course, University of the Ryukyus</p>
+                <p class="muted">Completed the Global Shinryo Minor Program.</p>
               </div>
             </article>
             <article class="timeline-item">
@@ -853,11 +873,11 @@ footer p {
               </div>
               <div class="skill-item">
                 <dt>Parallel Computing</dt>
-                <dd>CUDA, SYCL</dd>
+                <dd>CUDA (Basic), SYCL (Basic)</dd>
               </div>
               <div class="skill-item">
                 <dt>Enterprise Systems</dt>
-                <dd>SAP</dd>
+                <dd>SAP (Basic)</dd>
               </div>
             </dl>
           </div>
@@ -875,7 +895,7 @@ footer p {
               </div>
               <div class="skill-item">
                 <dt>English</dt>
-                <dd>Working Proficiency (TOEIC L&amp;R 720, 2024)</dd>
+                <dd>TOEIC Listening &amp; Reading: 720</dd>
               </div>
             </dl>
           </div>
@@ -888,7 +908,7 @@ footer p {
           <h2 id="contact-heading">Contact</h2>
         </div>
         <p>
-          I am interested in research collaboration in network measurement,traffic analysis, anomaly detection, and machine learning for reliable network systems.
+          I am seeking PhD opportunities starting in 2027 in machine learning for networked systems, with interests in anomaly detection, probabilistic modelling, and federated learning and unlearning. Please feel free to contact me about potential supervision or research collaboration.
         </p>
         <a class="contact-link" href="mailto:chenshude31@gmail.com">
           chenshude31@gmail.com
